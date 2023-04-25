@@ -1,5 +1,6 @@
 ﻿using MelonLoader;
 using UnityEngine;
+using Il2Cpp;
 
 namespace AnkleSupport
 {
@@ -13,7 +14,7 @@ namespace AnkleSupport
         private static float ankleMoveChanceReduction;
         private static float wristMoveChanceReduction;
 
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
             Debug.Log($"[{Info.Name}] version {Info.Version} loaded!");
             AS_Settings.OnLoad();
